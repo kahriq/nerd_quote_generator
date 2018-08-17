@@ -63,7 +63,7 @@
         let tweetURL = `https://twitter.com/intent/tweet?text="${currentQuote}" - ${currentAuthor}&hashtags=geekquote via @kahriqsalil`
         link.href = tweetURL;
         link.target = "_blank";
-        img.src = "../images/tweet_button.png";
+        img.src = "./images/tweet_button.png";
         img.className = "tweet"
         link.appendChild(img);
         list.appendChild(link);
