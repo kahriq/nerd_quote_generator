@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+body {
+	background-color: #fff;
+    padding:30px;
+	background-size:auto;
+	transition: background .4s linear;
+	color:#000;
+}
+
+i {
+    opacity: 0;
+}
+
+i.fadeIn {
+    opacity: 1;
+    transition: opacity 1s; 
+}
+
+#title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Bangers', cursive;
+    margin-bottom: 0%;
+    color: red;
+    -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+    -webkit-text-stroke: 1px black;
+}
+
+#subtitle {
+    text-align: center;
+    margin-top: 0%;
+}
+
+.tweet {
+    width: 80px;
+}
+
+#container {
+	margin-top:50px;
+	width:100%;
+}
+
+#list {
+	padding:20px;
+	border-radius:12px;
+	margin: auto;
+	min-width:300px;
+	max-width:500px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s; 
+}
+
+#list blockquote {
+    font-size: 1rem;
+    padding:15px;
+    transition: background 0.5s linear;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+
+#list blockquote #quote {
+    margin:auto 20px;
+    font-weight: 300;
+    text-transform:uppercase;
+    line-height: 1em;
+}
+
+#list blockquote #quoteAuthor{
+    font-weight: 400;
+}
+
+
+#btn {
+    margin-bottom:50px;
+}
+
+#btn #newBtn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #e184f3;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #e184f3;
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c123de), color-stop(1, #a20dbd));
+	background:-moz-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+	background:-webkit-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+	background:-o-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+	background:-ms-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c123de', endColorstr='#a20dbd',GradientType=0);
+	background-color:#c123de;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+    padding:10px 20px;
+    text-transform: uppercase;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #9b14b3;
+    margin: auto;
+}
+#btn #newBtn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a20dbd), color-stop(1, #c123de));
+	background:-moz-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+	background:-webkit-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+	background:-o-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+	background:-ms-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a20dbd', endColorstr='#c123de',GradientType=0);
+	background-color:#a20dbd;
+}
+#btn #newBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+@media only screen and (max-width:860px){
+	body{background-size:cover;}
+}
+
+@media only screen and (min-width:310px) and (max-width:650px){
+	body{
+		padding:0;
+	}
+	
+	#container{
+		margin:0;
+	}
+	
+    #list{
+        display:flex;
+        margin: auto;
+        padding:10px;
+        min-width:80%;
+    }
+
+    #list blockquote{
+        font-size: 0.8rem;
+    }	
+
+}
